@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sree Krishnan R | AI/ML Engineer</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS Animation Library CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#050505',
+                        accent: '#00ffcc', /* Cyber-cyan for AI vibe */
+                        textMain: '#f8fafc',
+                        textMuted: '#94a3b8'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body { 
+            font-family: 'Inter', system-ui, sans-serif; 
+            background-color: #050505;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+        
+        /* The Live Tech Background Container */
+        #particles-js { 
+            position: fixed; 
+            width: 100vw; 
+            height: 100vh; 
+            top: 0; 
+            left: 0; 
+            z-index: -1; 
+        }
+
+        /* Glassmorphism Navigation */
+        .glass-nav { 
+            background: rgba(5, 5, 5, 0.7); 
+            backdrop-filter: blur(12px); 
+            border-bottom: 1px solid rgba(0, 255, 204, 0.2); 
+        }
+
+        /* Creative Hover Cards */
+        .module-card { 
+            background: rgba(20, 25, 35, 0.6); 
+            backdrop-filter: blur(8px); 
+            border: 1px solid rgba(255, 255, 255, 0.05); 
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+        }
+        .module-card:hover { 
+            transform: translateY(-8px) scale(1.02); 
+            border-color: #00ffcc; 
+            box-shadow: 0 15px 35px -10px rgba(0, 255, 204, 0.2); 
+            z-index: 10;
+        }
+
+        /* Glowing text effect */
+        .text-glow {
+            text-shadow: 0 0 15px rgba(0, 255, 204, 0.5);
+        }
+    </style>
+</head>
+<body class="antialiased leading-relaxed">
+
+    <!-- Live Tech Background -->
+    <div id="particles-js"></div>
+
+    <!-- Floating Glass Navigation -->
+    <nav class="glass-nav fixed w-full top-0 z-50 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex flex-wrap justify-between items-center">
+            <a href="#hero" class="text-accent font-bold text-xl tracking-wider text-glow">SK</a>
+            <div class="flex gap-4 md:gap-8 text-sm md:text-base font-medium">
+                <a href="#about" class="hover:text-accent transition-colors duration-300">About</a>
+                <a href="#trophy" class="hover:text-accent transition-colors duration-300">Trophy Room</a>
+                <a href="#skills" class="hover:text-accent transition-colors duration-300">Skills</a>
+                <a href="#experience" class="hover:text-accent transition-colors duration-300">Experience</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Wrapper -->
+    <div class="max-w-5xl mx-auto px-6 pt-32 pb-20 relative z-10">
+        
+        <!-- HERO SECTION -->
+        <section id="hero" class="min-h-[80vh] flex flex-col justify-center mb-20" data-aos="fade-up" data-aos-duration="1000">
+            <div class="inline-block px-4 py-1 rounded-full border border-accent/30 text-accent text-sm font-semibold mb-6 w-max bg-accent/10 backdrop-blur-sm">
+                Available for Roles
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4 tracking-tight">
+                SREE KRISHNAN R
+            </h1>
+            <h2 class="text-2xl md:text-4xl text-accent font-light mb-8 text-glow">
+                AI/ML Engineer & Competitive Developer
+            </h2>
+            
+            <div class="flex flex-wrap gap-6 text-sm md:text-base text-textMuted mb-8 module-card p-4 rounded-xl w-max">
+                <span class="flex items-center gap-2">📍 Erode</span>
+                <a href="mailto:sreek18@gmail.com" class="hover:text-accent transition flex items-center gap-2">📧 sreek18@gmail.com</a>
+                <span class="flex items-center gap-2">📞 +91 9487873060</span>
+                <a href="https://linkedin.com/in/sreekr18" target="_blank" class="hover:text-accent transition flex items-center gap-2">🔗 LinkedIn</a>
+                <a href="https://github.com/sreekr18" target="_blank" class="hover:text-accent transition flex items-center gap-2">💻 GitHub</a>
+            </div>
+
+            <div>
+                <a href="RESUME_SREE_KRISHNAN.pdf" download class="inline-flex items-center justify-center px-8 py-3 text-base font-medium text-black bg-accent rounded-lg hover:bg-white transition-all duration-300 transform hover:scale-105 shadow-[0_0_20px_rgba(0,255,204,0.4)]">
+                    Download Resume
+                </a>
+            </div>
+        </section>
+
+        <!-- ABOUT ME -->
+        <section id="about" class="mb-32 pt-20" data-aos="fade-right">
+            <h3 class="text-3xl font-bold mb-6 flex items-center gap-4">
+                <span class="w-12 h-[2px] bg-accent"></span> About Me
+            </h3>
+            <div class="module-card p-8 rounded-2xl text-lg leading-relaxed text-textMuted shadow-2xl">
+                I build intelligent systems and thrive under the 24-hour countdown of a hackathon. Currently pursuing a B.Sc. in Computer Science and Applications at VET Institute of Arts and Science College (Current CGPA: 8.3), my focus is on AI/ML engineering, data analytics, and scalable application development. With over a dozen major hackathon titles to my name, I specialize in rapid prototyping—turning complex machine learning concepts into functional, competitive software under pressure.
+            </div>
+        </section>
+
+        <!-- THE TROPHY ROOM (HACKATHONS) -->
+        <section id="trophy" class="mb-32 pt-20">
+            <h3 class="text-3xl font-bold mb-8 flex items-center gap-4" data-aos="fade-right">
+                <span class="w-12 h-[2px] bg-accent"></span> 🏆 The Trophy Room
+            </h3>
+            <p class="text-accent mb-8 italic" data-aos="fade-up">I don't just participate; I deliver winning solutions. Here is the track record of my team's major wins:</p>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Top Tier Wins -->
+                <div class="module-card p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+                    <h4 class="text-xl font-bold mb-6 text-white flex items-center gap-2">🥇 Top-Tier Finishes</h4>
+                    <ul class="space-y-4 text-textMuted">
+                        <li class="flex items-start gap-3"><span class="text-accent">▹</span> Cognizant Technoverse Hackathon 2026</li>
+                        <li class="flex items-start gap-3"><span class="text-accent">▹</span> Tata Bharat YUVAi Hackathon</li>
+                        <li class="flex items-start gap-3"><span class="text-accent">▹</span> Tata Technologies InnoVent 2026</li>
+                        <li class="flex items-start gap-3"><span class="text-accent">▹</span> Bank of India CyberShield Hackathon 2026</li>
+                        <li class="flex items-start gap-3"><span class="text-accent">▹</span> Flipkart GRiD 8.0</li>
+                        <li class="flex items-start gap-3"><span class="text-accent">▹</span> Goldman Sachs India Hackathon 2026</li>
+                        <li class="flex items-start gap-3"><span class="text-accent">▹</span> Samsung Innovation Campus Hackathons, TN</li>
+                        <li class="flex items-start gap-3"><span class="text-accent">▹</span> electronica India Tech Challenge 2026</li>
+                        <li class="flex items-start gap-3"><span class="text-accent">▹</span> TNSDC Naan Mudhalvan Advanced AI/ML 2026</li>
+                        <li class="flex items-start gap-3"><span class="text-accent">▹</span> SEMICON India Hackathon 2026</li>
+                        <li class="flex items-start gap-3"><span class="text-accent">▹</span> PEC Hacks 4.0</li>
+                    </ul>
+                </div>
+                
+                <!-- Regional Wins -->
+                <div class="module-card p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
+                    <h4 class="text-xl font-bold mb-6 text-white flex items-center gap-2">🏅 Regional Wins</h4>
+                    <ul class="space-y-6 text-textMuted">
+                        <li class="p-4 bg-white/5 rounded-lg border border-white/5">
+                            <strong class="text-accent block text-lg">1st Place</strong>
+                            Technical Quiz, QUTRIX-25, Gobi Arts and Science College
+                        </li>
+                        <li class="p-4 bg-white/5 rounded-lg border border-white/5">
+                            <strong class="text-accent block text-lg">2nd Prize</strong>
+                            Nation Science Day Hackathon, VET Institute of Arts and Science
+                        </li>
+                        <li class="p-4 bg-white/5 rounded-lg border border-white/5">
+                            <strong class="text-white block text-lg">Participant</strong>
+                            StartupTN Spark'25 Hackathon
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECHNICAL ARSENAL -->
+        <section id="skills" class="mb-32 pt-20">
+            <h3 class="text-3xl font-bold mb-8 flex items-center gap-4" data-aos="fade-right">
+                <span class="w-12 h-[2px] bg-accent"></span> Technical Arsenal
+            </h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="module-card p-6 rounded-xl" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="text-accent text-3xl mb-4">🧠</div>
+                    <h4 class="font-bold text-lg mb-2">AI & Machine Learning</h4>
+                    <p class="text-sm text-textMuted">Python, PyTorch, Scikit-learn, Pandas, NumPy, Hugging Face, LangChain, OpenAI API.</p>
+                </div>
+
+                <div class="module-card p-6 rounded-xl" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="text-accent text-3xl mb-4">⚡</div>
+                    <h4 class="font-bold text-lg mb-2">Rapid Prototyping (UI)</h4>
+                    <p class="text-sm text-textMuted">React.js, Streamlit, Tailwind CSS, Figma, Canva.</p>
+                </div>
+
+                <div class="module-card p-6 rounded-xl" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="text-accent text-3xl mb-4">⚙️</div>
+                    <h4 class="font-bold text-lg mb-2">Backend & APIs</h4>
+                    <p class="text-sm text-textMuted">C, C++, Java, FastAPI, Flask, Node.js.</p>
+                </div>
+
+                <div class="module-card p-6 rounded-xl" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="text-accent text-3xl mb-4">☁️</div>
+                    <h4 class="font-bold text-lg mb-2">Cloud & Deployment</h4>
+                    <p class="text-sm text-textMuted">MongoDB, PostgreSQL, Tableau, Docker, AWS (EC2/S3), Vercel, Netlify.</p>
+                </div>
+
+                <div class="module-card p-6 rounded-xl md:col-span-2 lg:col-span-1" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="text-accent text-3xl mb-4">🛠️</div>
+                    <h4 class="font-bold text-lg mb-2">Tooling</h4>
+                    <p class="text-sm text-textMuted">Git/GitHub, Linux OS, Cursor AI.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- EXPERIENCE & PROJECTS -->
+        <section id="experience" class="mb-32 pt-20">
+            <h3 class="text-3xl font-bold mb-8 flex items-center gap-4" data-aos="fade-right">
+                <span class="w-12 h-[2px] bg-accent"></span> Experience & Builds
+            </h3>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Experience -->
+                <div class="space-y-6">
+                    <div class="module-card p-6 rounded-xl border-l-4 border-l-accent" data-aos="fade-up">
+                        <h4 class="font-bold text-xl mb-1">Software Engineering Intern</h4>
+                        <div class="text-accent text-sm mb-3 font-mono">Elite Billing | Jun 2026 – Jun 2026</div>
+                        <p class="text-textMuted text-sm">Worked directly on the company's real projects. Gained practical software engineering experience in a fast-paced professional environment.</p>
+                    </div>
+
+                    <div class="module-card p-6 rounded-xl border-l-4 border-l-white/30" data-aos="fade-up" data-aos-delay="100">
+                        <h4 class="font-bold text-xl mb-1">React App Dev Trainee</h4>
+                        <div class="text-accent text-sm mb-3 font-mono">Jun 2026 – Jun 2026</div>
+                        <p class="text-textMuted text-sm">Completed an intensive training program centered on React application development and component architecture.</p>
+                    </div>
+                </div>
+
+                <!-- Projects -->
+                <div class="space-y-6">
+                    <div class="module-card p-6 rounded-xl group relative overflow-hidden" data-aos="fade-left">
+                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity text-6xl">🏢</div>
+                        <div class="flex justify-between items-start mb-4 relative z-10">
+                            <h4 class="font-bold text-xl">HR Leave Management Tool</h4>
+                            <a href="https://hrhubs.netlify.app/" target="_blank" class="px-3 py-1 bg-accent/20 text-accent text-xs rounded-full hover:bg-accent hover:text-black transition">Live Demo ↗</a>
+                        </div>
+                        <p class="text-textMuted text-sm relative z-10 mb-2">Built a full-stack tool specifically designed for handling employee leave requests. Integrated HR approval processes and real-time status tracking.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education" class="mb-20 pt-20" data-aos="fade-up">
+            <h3 class="text-3xl font-bold mb-8 flex items-center gap-4">
+                <span class="w-12 h-[2px] bg-accent"></span> Education & Credentials
+            </h3>
+            
+            <div class="module-card p-8 rounded-2xl">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="space-y-6">
+                        <div>
+                            <strong class="text-white block text-lg">B.Sc. Computer Science and Applications</strong>
+                            <span class="text-accent block text-sm mb-1">VET Institute of Arts and Science (2024–2027)</span>
+                            <span class="text-textMuted text-sm">Current CGPA: 8.3</span>
+                        </div>
+                        <div>
+                            <strong class="text-white block">HSC (Class XII)</strong>
+                            <span class="text-textMuted text-sm">Bharathi Vidya Bhavan Matric Hr Sec School | 82.8%</span>
+                        </div>
+                        <div>
+                            <strong class="text-white block">SSLC (Class X)</strong>
+                            <span class="text-textMuted text-sm">Kongu Kalvi Nilayam Matric Hr Sec School | 94.8%</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="space-y-4 text-textMuted">
+                        <li class="flex gap-3"><span class="text-accent">✓</span> <div><strong class="text-white">AI/ML Using Python:</strong> Scored 78% in proctored exam (IITM Pravartak).</div></li>
+                        <li class="flex gap-3"><span class="text-accent">✓</span> <div><strong class="text-white">Academic Excellence:</strong> Consecutive awards during Achiever's Day at college.</div></li>
+                        <li class="flex gap-3"><span class="text-accent">✓</span> <div><strong class="text-white">Typewriting:</strong> First Class with Distinction, English Junior (DoTE GTE).</div></li>
+                        <li class="flex gap-3"><span class="text-accent">✓</span> <div><strong class="text-white">Community:</strong> Active NSS Volunteer for campus events.</div></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Scripts for Animations and Background -->
+    
+    <!-- AOS JS for Scroll Animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Particles JS for Live Tech Background -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script>
+        // Initialize Animate On Scroll
+        AOS.init({
+            once: true, // whether animation should happen only once - while scrolling down
+            offset: 100, // offset (in px) from the original trigger point
+            duration: 800, // values from 0 to 3000, with step 50ms
+            easing: 'ease-out-cubic', // default easing for AOS animations
+        });
+
+        // Initialize Live Tech Background (Neural Network Theme)
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 60,
+                    "density": { "enable": true, "value_area": 800 }
+                },
+                "color": { "value": "#00ffcc" },
+                "shape": {
+                    "type": "circle",
+                    "stroke": { "width": 0, "color": "#000000" }
+                },
+                "opacity": {
+                    "value": 0.3,
+                    "random": false,
+                    "anim": { "enable": false }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": { "enable": false }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#00ffcc",
+                    "opacity": 0.2,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 2,
+                    "direction": "none",
+                    "random": true,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": { "enable": true, "rotateX": 600, "rotateY": 1200 }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": { "enable": true, "mode": "grab" },
+                    "onclick": { "enable": true, "mode": "push" },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": { "distance": 200, "line_linked": { "opacity": 0.6 } },
+                    "push": { "particles_nb": 3 }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+</body>
+</html>
